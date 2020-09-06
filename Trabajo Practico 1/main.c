@@ -3,16 +3,16 @@
 
 int NumeroX(char* mensaje);
 int NumeroY(char* mensaje);
-int Suma();
-int Resta();
-int Multiplicacion();
+int Suma(int x, int y);
+int Resta(int x, int y);
+int Multiplicacion(int x, int y);
 
 
 int main()
 {
-    printf("%d",Suma());
-    printf("%d",Resta());
-    printf("%d",Multiplicacion());
+    printf("%d",Suma(NumeroX("Ingrese numero X: "),NumeroY("Ingrese numero Y: ")));
+    printf("%d",Resta(NumeroX("Ingrese numero X: "),NumeroY("Ingrese numero Y: ")));
+    printf("%d",Multiplicacion(NumeroX("Ingrese numero X: "),NumeroY("Ingrese numero Y: ")));
 
 
     return 0;
@@ -38,50 +38,31 @@ int NumeroY(char* mensaje)
     return numeroIngresado;
 }
 
-int Suma()
+int Suma(int x, int y)
 {
     int sumaRegresada;
-    int numeroXIngresado;
-    int numeroYIngresado;
 
-    numeroXIngresado = NumeroX("Ingrese numero x: ");
-    numeroYIngresado = NumeroY("Ingrese numero y: ");
-    sumaRegresada = numeroXIngresado + numeroYIngresado;
-
+    sumaRegresada = x + y;
     printf("La suma es: ");
-
-
-
-
 
     return sumaRegresada;
 }
 
-int Resta()
+int Resta(int x, int y)
 {
     int restaRegresada;
-    int numeroXIngresado;
-    int numeroYIngresado;
 
-    numeroXIngresado = NumeroX("\nIngrese numero x: ");
-    numeroYIngresado = NumeroY("Ingrese numero y: ");
-    restaRegresada = numeroXIngresado - numeroYIngresado;
-
+    restaRegresada = x - y;
     printf("La resta es: ");
 
     return restaRegresada;
 }
 
-int Multiplicacion()
+int Multiplicacion(int x, int y)
 {
     int multiplicacionRegresada;
-    int numeroXIngresado;
-    int numeroYIngresado;
 
-    numeroXIngresado = NumeroX("\nIngrese numero x: ");
-    numeroYIngresado = NumeroY("Ingrese numero y: ");
-    multiplicacionRegresada = numeroXIngresado * numeroYIngresado;
-
+    multiplicacionRegresada = x * y;
     printf("La multiplicacion es: ");
 
     return multiplicacionRegresada;
