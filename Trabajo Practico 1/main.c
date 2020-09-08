@@ -12,6 +12,8 @@ int Factorial(int x, int y);
 
 int main()
 {
+    int a;
+    int b;
     int opcion;
     do{
         printf(" 1. Ingresar 1er operando. \n 2.Ingresar 2do operando.  \n 3. Calcular todas las operaciones.\n 4. Salir. ");
@@ -21,18 +23,19 @@ int main()
         {
         case 1:
             printf("Ingrese 1er numero: ");
-            NumeroX();
+            scanf("%d",&a);
             break;
         case 2:
             printf("Ingrese 2do numero: ");
-            NumeroY();
+            scanf("%d",&b);
             break;
         case 3:
-            printf("%d",Suma(NumeroX(),NumeroY()));
-            printf("%d",Resta(NumeroX(),NumeroY()));
+            printf("%d",Suma(a,b));
+            break;
+            /*printf("%d",Resta(NumeroX(),NumeroY()));
             printf("%d",Multiplicacion(NumeroX(),NumeroY()));
             printf("%f",Division(NumeroX(),NumeroY()));
-            break;
+            break;*/
         }
 
     }while(opcion!= 4);
@@ -74,7 +77,7 @@ int main()
     return 0;
 }
 
-int NumeroX()
+/*int NumeroX()
 {
     int numeroIngresado;
 
@@ -90,14 +93,13 @@ int NumeroY()
     scanf("%d",&numeroIngresado);
 
     return numeroIngresado;
-}
+}*/
 
 int Suma(int x, int y)
 {
     int sumaRegresada;
 
     sumaRegresada = x + y;
-    printf("La suma es: ");
 
     return sumaRegresada;
 }
