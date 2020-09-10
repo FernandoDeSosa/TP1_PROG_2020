@@ -10,6 +10,7 @@ int main()
     do{
         printf(" 1. Ingresar 1er operando (A = x). \n 2. Ingresar 2do operando (B = y).  \n 3. Calcular todas las operaciones.\n 4. Informar resultados.\n 5. Salir. ");
         scanf("%d",&opcion);
+        system("CLS");
 
         switch(opcion)
         {
@@ -26,13 +27,17 @@ int main()
             Resta(a, b);
             Division(a, b, "", " ");
             Multiplicacion(a, b);
+            FactorialX(a);
+            FactorialY(b);
 
             break;
         case 4:
             printf("El resultado de A+B es: %d\n",Suma(a, b));
             printf("El resultado de A-B es: %d\n",Resta(a, b));
             printf("%f",Division(a, b, "No es posible dividir por cero.\n", "El resultado de A/B es: "));
-            printf("\nEl resultado de A*B es: %d",Multiplicacion(a, b));
+            printf("\nEl resultado de A*B es: %d\n",Multiplicacion(a, b));
+            printf("El factorial de A es: %d\n",FactorialX(a));
+            printf("El factorial de B es: %d",FactorialY(b));
 
         }
 

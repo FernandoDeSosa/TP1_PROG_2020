@@ -47,20 +47,40 @@ float Division(float x, float y, char* mensajeError, char* mensajeMostrar)
     return divisionRegresada;
 }
 
-/*int Factorial(int x, int y)
+
+
+
+int FactorialX(int x)
 {
     int factorialDevuelto;
 
-    if(x == 0 || y == 0)
+    if(x == 0 )
     {
         factorialDevuelto = 1;
     }
     else
     {
-        factorialDevuelto = x *CalcularFactorial(numero - 1);
+        factorialDevuelto = x * (x - 1);
     }
 
     return factorialDevuelto;
     //n! ? n*(n-1)!
 
-}*/
+}
+
+int FactorialY(int y)
+{
+    int factorialDevuelto;
+
+    if(y == 0 )
+    {
+        factorialDevuelto = 1;
+    }
+    else
+    {
+        factorialDevuelto = y * (y - 1);
+    }
+
+    return factorialDevuelto;
+
+}
