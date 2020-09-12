@@ -1,5 +1,12 @@
 #include "funciones.h"
 
+/** \brief Suma dos enteros.
+ *
+ * \param x int recibe un entero.
+ * \param y int recibe un entero.
+ * \return int retorna la suma de los dos enteros.
+ *
+ */
 int Suma(int x, int y)
 {
     int sumaRegresada;
@@ -10,6 +17,13 @@ int Suma(int x, int y)
     return sumaRegresada;
 }
 
+/** \brief Resta dos enteros.
+ *
+ * \param x int recibe un entero.
+ * \param y int recibe un entero,
+ * \return int retorna la resta de los dos enteros.
+ *
+ */
 int Resta(int x, int y)
 {
     int restaRegresada;
@@ -19,6 +33,13 @@ int Resta(int x, int y)
     return restaRegresada;
 }
 
+/** \brief Multiplica dos enteros.
+ *
+ * \param x int recibe un entero.
+ * \param y int recibe un entero.
+ * \return int retorna la multiplicacion de los dos enteros.
+ *
+ */
 int Multiplicacion(int x, int y)
 {
     int multiplicacionRegresada;
@@ -28,20 +49,24 @@ int Multiplicacion(int x, int y)
     return multiplicacionRegresada;
 }
 
-float Division(float x, float y, char* mensajeError, char* mensajeMostrar)
+/** \brief Divide dos flotantes.
+ *
+ * \param x float recibe un flotante.
+ * \param y float recibe un flotante.
+ * \return float si alguno de los dos flotante es "0" no hace la operacion, si no retorna la division de los dos flotantes.
+ *
+ */
+float Division(float x, float y)
 {
     float divisionRegresada;
 
-    divisionRegresada =(float) x / y;
-
     if(x == 0 || y == 0)
     {
-        printf("%s",mensajeError);
+        printf("No es posible dividir por cero.");
     }
     else
     {
-
-        printf("%s",mensajeMostrar);
+        divisionRegresada =(float) x / y;
     }
 
     return divisionRegresada;
@@ -50,37 +75,40 @@ float Division(float x, float y, char* mensajeError, char* mensajeMostrar)
 
 
 
-int FactorialX(int x)
+/** \brief Encuentra el factorial de un numero.
+ *
+ * \param numero int recibe un entero.
+ * \return int retorna el factorial del entero.
+ *
+ */
+int Factorial(int numero)
 {
-    int factorialDevuelto;
+    int factorial;
+    int i;
 
-    if(x == 0 )
+    factorial = 1;
+
+    for(i = numero; i > 1; i--)
     {
-        factorialDevuelto = 1;
-    }
-    else
-    {
-        factorialDevuelto = x * (x - 1);
+        factorial = factorial * i;
     }
 
-    return factorialDevuelto;
-    //n! ? n*(n-1)!
 
+
+    return factorial;
 }
 
-int FactorialY(int y)
+/** \brief Pide un entero al usuario.
+ *
+ * \param void
+ * \return int retorna el entero ingresado.
+ *
+ */
+int PedirNumero(void)
 {
-    int factorialDevuelto;
+    int retornoNumero;
 
-    if(y == 0 )
-    {
-        factorialDevuelto = 1;
-    }
-    else
-    {
-        factorialDevuelto = y * (y - 1);
-    }
+    scanf("%d",&retornoNumero);
 
-    return factorialDevuelto;
-
+    return retornoNumero;
 }

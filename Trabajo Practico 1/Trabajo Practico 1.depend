@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1599736807 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 1\main.c
+1599911067 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
 
-1599736508 d:\programacion facultad\tp1_prog_2020\trabajo practico 1\funciones.h
+1599909446 d:\programacion facultad\tp1_prog_2020\trabajo practico 1\funciones.h
 	<stdio.h>
 
-1599736522 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 1\funciones.c
+1599910796 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 1\funciones.c
 	"funciones.h"
 
