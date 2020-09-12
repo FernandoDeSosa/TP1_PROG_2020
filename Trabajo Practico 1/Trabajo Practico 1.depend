@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1599911067 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 1\main.c
+1599916511 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"

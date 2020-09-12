@@ -12,9 +12,7 @@ int main()
     b = 0;
 
     do{
-        printf("\nEl valor de A es: %d\n",a);
-        printf("\nEl valor de B es: %d\n",b);
-        printf("\n 1. Ingresar 1er operando A . \n 2. Ingresar 2do operando B .  \n 3. Calcular todas las operaciones.\n 4. Informar resultados.\n 5. Salir. ");
+        printf("\n 1. Ingresar 1er operando A = %d . \n 2. Ingresar 2do operando B = %d .  \n 3. Calcular todas las operaciones.\n 4. Informar resultados.\n 5. Salir. ",a,b);
         scanf("%d",&opcion);
         system("CLS");
 
