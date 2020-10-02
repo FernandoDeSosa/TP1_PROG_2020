@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1601643966 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 2\trabajo practico 2\arrayemployees.c
+	"ArrayEmployees.h"
+
+1601637857 d:\programacion facultad\tp1_prog_2020\trabajo practico 2\trabajo practico 2\arrayemployees.h
+	<stdio.h>
+
+1601643200 source:d:\programacion facultad\tp1_prog_2020\trabajo practico 2\trabajo practico 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+	<string.h>
+
