@@ -59,8 +59,7 @@ int AnadirEmpleado(Employee lista[], int len)
                 scanf("%f",&lista[i].salario);
                 printf("Ingrese sector: \n");
                 scanf("%d",&lista[i].sector);
-                printf("Ingrese id: \n");
-                scanf("%d",&lista[i].id);
+                lista[i].id = i+1;
 
                 lista[i].isEmpty = OCUPADO;
                 aux = 1;
@@ -74,7 +73,7 @@ int AnadirEmpleado(Employee lista[], int len)
 int MostrarEmpleados(Employee lista[], int len)
 {
     int retorno;
-    retorno = 1;
+    retorno = -1;
 
     int i;
     if(lista != NULL && len >= 0)
